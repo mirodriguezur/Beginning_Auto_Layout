@@ -142,6 +142,68 @@
             <point key="canvasLocation" x="1874.4000000000001" y="66.502463054187189"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="iJF-FF-AQn">
+            <objects>
+                <viewController id="SfL-gw-JU6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cuj-0L-PKz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eeJ-gv-Yes">
+                                <rect key="frame" x="19" y="91" width="336" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather-thunderstorm" translatesAutoresizingMaskIntoConstraints="NO" id="KOD-cd-dPr">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="1An-aA-GKF">
+                                        <rect key="frame" x="150" y="51.333333333333336" width="186" height="68.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pirate Ghost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmA-MQ-cCo">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="27.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formerly a Mighty Pirate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quQ-Go-UMD">
+                                                <rect key="frame" x="0.0" y="48.333333333333336" width="186" height="20.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="bcK-AH-j1o"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-nh-vJ1">
+                                <rect key="frame" x="7" y="219" width="360" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather-cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="73B-fI-NRc">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather-rain" translatesAutoresizingMaskIntoConstraints="NO" id="GeT-So-qVw">
+                                        <rect key="frame" x="120" y="0.0" width="120" height="120"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather-sun" translatesAutoresizingMaskIntoConstraints="NO" id="Eyp-1w-VBR">
+                                        <rect key="frame" x="240" y="0.0" width="120" height="120"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="ggm-hX-LXn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GTV-Y2-NSD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNM-ij-rpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853.5999999999999" y="773.64532019704438"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tum-xx-ntb">
             <objects>
                 <viewController id="haM-DJ-Iua" sceneMemberID="viewController">
@@ -207,7 +269,10 @@
     <resources>
         <image name="background" width="1366" height="1366"/>
         <image name="button" width="51" height="40"/>
+        <image name="weather-cloudy" width="120" height="120"/>
+        <image name="weather-rain" width="120" height="120"/>
         <image name="weather-sun" width="120" height="120"/>
+        <image name="weather-thunderstorm" width="120" height="120"/>
         <image name="weather-windy" width="120" height="120"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
