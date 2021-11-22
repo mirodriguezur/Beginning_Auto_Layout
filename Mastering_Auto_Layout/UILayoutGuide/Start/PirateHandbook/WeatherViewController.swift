@@ -27,6 +27,17 @@ final class WeatherViewController: UIViewController {
     super.viewDidLoad()
     
     let images = [#imageLiteral(resourceName: "weather-sun"), #imageLiteral(resourceName: "weather-windy"), #imageLiteral(resourceName: "weather-thunderstorm")]
+    let imageViews: [UIImageView] = images.map{ image in
+        UIImageView(image:  image)                          //Objeto para mostrar imagen
+    }
+    
+    
+    let spacerGuides = (0..<images.count - 1).map {_ in UILayoutGuide()} //Array de UIlayoutguides
+    let containerGuide = UILayoutGuide()
+    
+    imageViews.forEach(view.addSubview)       //Agrego subView para cada imageView.
+    spacerGuides.forEach(view.addLayoutGuide) // Agrego las guias de diseno a una vista
+    view.addLayoutGuide(containerGuide)
   }
 }
 
