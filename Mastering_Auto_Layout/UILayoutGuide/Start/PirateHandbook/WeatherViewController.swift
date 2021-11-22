@@ -28,7 +28,9 @@ final class WeatherViewController: UIViewController {
     
     let images = [#imageLiteral(resourceName: "weather-sun"), #imageLiteral(resourceName: "weather-windy"), #imageLiteral(resourceName: "weather-thunderstorm")]
     let imageViews: [UIImageView] = images.map{ image in
-        UIImageView(image:  image)                          //Objeto para mostrar imagen
+        let imageView = UIImageView(image: image)
+        imageView.translatesAutoresizingMaskIntoConstraints = false //Se establece en Falso para no tener conflictos
+        return imageView
     }
     
     
