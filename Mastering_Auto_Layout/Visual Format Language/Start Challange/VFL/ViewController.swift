@@ -36,7 +36,17 @@ final class ViewController: UIViewController {
     views.forEach(view.addSubview)
     
     NSLayoutConstraint.activate(
-      [
+        ["H" : 8, "V" : 20].flatMap {direction, gap in
+            NSLayoutConstraint.constraints(
+                withVisualFormat:"\(direction):[upperLeft(size)]-(gap)-[middle(size)]-(gap)-[bottonRight(size)]",
+                metrics: ["gap": gap, "size": 50],
+                views: Dictionary(
+                    uniqueKeysWithValues: zip(["upperLeft","middle","bottonRight"], views)
+                )
+            )
+            
+        }
+      + [
         views[1].centerXAnchor.constraint(equalTo: view.centerXAnchor),
         views[1].centerYAnchor.constraint(equalTo: view.centerYAnchor)
       ]
